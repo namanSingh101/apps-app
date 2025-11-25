@@ -7,13 +7,13 @@ spec:
   project: frontend-team
 
   source:
-    repoURL: 
-    targetRevision: <BRANCH-or-TAG>
-    path: <DIRECTORY-PATH>
+    repoURL: https://github.com/namanSingh101/apps-app.git
+    targetRevision: main
+    path: apps/
 
   destination:
-    server: <CLUSTER-SERVER>
-    namespace: <NAMESPACE>
+    server: https://172.31.46.104:33893
+    namespace: argocd
 
   syncPolicy:
     automated:
