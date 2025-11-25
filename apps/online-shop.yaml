@@ -4,7 +4,7 @@ metadata:
   name: online-shop-child
   namespace: argocd
 spec:
-  project: frontend-team
+  project: default
 
   source:
     repoURL: https://github.com/namanSingh101/argocd-demos.git
