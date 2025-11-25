@@ -1,1 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root-app
+  namespace: argocd
+spec:
+  project: frontend-team
 
+  source:
+    repoURL: 
+    targetRevision: <BRANCH-or-TAG>
+    path: <DIRECTORY-PATH>
+
+  destination:
+    server: <CLUSTER-SERVER>
+    namespace: <NAMESPACE>
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
