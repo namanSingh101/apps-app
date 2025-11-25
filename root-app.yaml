@@ -4,7 +4,7 @@ metadata:
   name: root-app
   namespace: argocd
 spec:
-  project: frontend-team
+  project: default
 
   source:
     repoURL: https://github.com/namanSingh101/apps-app.git
